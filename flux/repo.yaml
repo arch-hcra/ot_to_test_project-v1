@@ -1,0 +1,9 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: todo-app
+spec:
+  url: https://github.com/arch-hcra/ot_to_test_project-v1.git
+  ref:
+    branch: main
+  interval: 1m
