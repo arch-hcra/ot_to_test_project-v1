@@ -2,8 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: todo-postgres
-  labels:
-    app: todo-postgres
 spec:
   replicas: 1
   selector:
@@ -16,7 +14,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres:13
+        image: archcra/todo-frontend:v6.0
         ports:
         - containerPort: 5432
         env:

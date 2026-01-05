@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: todo-postgres
 spec:
-  type: ClusterIP
   selector:
     app: todo-postgres
   ports:

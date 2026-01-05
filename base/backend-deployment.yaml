@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: archcra/todo-backend:v1
+        image: archcra/todo-backend:v6.0
         ports:
         - containerPort: 8000

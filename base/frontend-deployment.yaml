@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: todo-frontend
-  namespace: default
 spec:
   replicas: 2
   selector:
@@ -15,6 +14,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: archcra/rodo-frontend:V5.1
+        image: archcra/todo-frontend:v6.0
         ports:
         - containerPort: 80
