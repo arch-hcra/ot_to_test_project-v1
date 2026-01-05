@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: archcra/todo-frontend:v6.0
+        image: archcra/todo-postgres:v6.1
         ports:
         - containerPort: 5432
         env:
