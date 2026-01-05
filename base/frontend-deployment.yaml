@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: archcra/rodo-frontend:v5.0
+        image: archcra/rodo-frontend:V5.1
         ports:
         - containerPort: 80
